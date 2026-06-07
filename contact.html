@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduRDC — Nous contacter</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">Edu<span>RDC</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#fonctionnalites">Fonctionnalités</a></li>
+            <li><a href="index.html#roadmap">Roadmap</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="btn-nav">Connexion</a>
+    </nav>
+
+    <!-- Page Contact -->
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>📞 <span class="gold">Contactez</span> EduRDC</h1>
+            <p>Une question ? Un partenariat ? On est là pour toi.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Formulaire -->
+            <div class="contact-form">
+                <h2>Envoyez-nous un message ✉️</h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Votre nom complet" id="nom" required>
+                    <input type="email" placeholder="Votre adresse email" id="email" required>
+                    <input type="tel" placeholder="Votre téléphone (optionnel)" id="tel">
+                    <select id="sujet">
+                        <option value="">Sélectionnez un sujet</option>
+                        <option>💰 Partenariat / Financement</option>
+                        <option>📚 Question sur EduRDC</option>
+                        <option>🐛 Signaler un bug</option>
+                        <option>🏫 Mon école veut rejoindre</option>
+                        <option>📝 Autre</option>
+                    </select>
+                    <textarea rows="5" placeholder="Votre message..." id="message" required></textarea>
+                    <button type="submit" class="btn-submit">📩 Envoyer le message</button>
+                </form>
+                <p class="form-note">🔒 Nous répondons sous 48h. Pas de spam.</p>
+            </div>
+
+            <!-- Réseaux sociaux & infos -->
+            <div class="contact-infos">
+                <div class="info-card">
+                    <h3>🌍 Suivez-nous</h3>
+                   <div class="social-links">
+                       <a href="https://wa.me/243998913352" class="social-link whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                       <a href="https://www.instagram.com/mauriciomdproducoes/" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                       <a href="https://www.linkedin.com/in/mauricio-mdproducoes-b07214323/" class="social-link linkedin" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                       <a href="https://x.com/MauricioMD2026" class="social-link twitter" target="_blank"><i class="fab fa-twitter"></i> X (Twitter)</a>
+                       <a href="https://www.facebook.com/mauricio.md.producoes" class="social-link facebook" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                       <a href="#" class="social-link tiktok" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                  </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>📍 Nous trouver</h3>
+                    <p>🇨🇩 Kinshasa, République Démocratique du Congo</p>
+                    <p>📧 <a href="mailto:contact@edurdc.cd">contact@edurdc.cd</a></p>
+                    <p>📞 <a href="tel:+243123456789">+243 123 456 789</a></p>
+                </div>
+
+                <div class="info-card">
+                    <h3>💡 Rejoindre l'équipe</h3>
+                    <p>Étudiant, développeur, créateur de contenu ?</p>
+                    <a href="#" class="btn-outline-small">Postuler ici</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EduRDC Platform · Kinshasa, RDC</p>
+        <p>Construit avec ❤️ pour les 17 millions d'élèves congolais</p>
+    </footer>
+
+    <script src="../js/contact.js"></script>
+    <script src="../js/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduRDC — La plateforme éducative de la RDC</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="logo">Edu<span>RDC</span></div>
+    <ul class="nav-links">
+      <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+      <li><a href="#">Roadmap</a></li>
+      <li><a href="enseignants.html">Enseignants</a></li>
+      <li><a href="tarifs.html">Tarifs</a></li>
+      <li><a href="propos.html">À propos</a></li>
+    </ul>
+    <a href="login.html" class="btn-nav">Commencer gratuitement</a>
+    <button class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Menu mobile -->
+  <div class="menu-mobile" id="menuMobile">
+    <a href="fonctionnalites.html">Fonctionnalités</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="enseignants.html">Enseignants</a>
+    <a href="login.html" class="btn-primary">Commencer gratuitement</a>
+  </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-ring ring1"></div>
+    <div class="hero-ring ring2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Infrastructure éducative souveraine · RDC 2025
+      </div>
+      <h1>L'éducation de qualité<br><span class="gold">pour chaque élève congolais</span></h1>
+      <p class="hero-sub">
+        Révise tout le programme EPST, passe des examens blancs Exétat,
+        et apprends avec ton tuteur IA — même sans connexion internet.
+      </p>
+      <div class="btn-group">
+        <a href="login.html" class="btn-primary">Commencer gratuitement →</a>
+        <a href="login.html" class="btn-outline" data-protect-exam>Voir la démo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-num"><span>17M</span></div>
+      <div class="stat-label">Élèves en RDC</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span>100%</span></div>
+      <div class="stat-label">Programme EPST couvert</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span>5</span></div>
+      <div class="stat-label">Langues nationales</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span>+25%</span></div>
+      <div class="stat-label">Taux de réussite visé</div>
+    </div>
+  </div>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features" id="fonctionnalites">
+    <div class="section-header">
+      <span class="section-tag">Fonctionnalités</span>
+      <h2>Tout ce dont tu as besoin<br>pour réussir l'Exétat</h2>
+      <p>Conçu pour la réalité congolaise : faible connexion, smartphone Android, programme officiel EPST.</p>
+    </div>
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feat-icon blue">🧠</div>
+        <h3>Tuteur IA KONGO AI</h3>
+        <p>Ton répétiteur numérique personnel. Explique en français, lingala, swahili. Fonctionne sans internet grâce à un modèle IA embarqué.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon gold">📝</div>
+        <h3>Simulateur Exétat</h3>
+        <p>15 000+ vraies questions des Exétat 2010–2024. Chronomètre, correction automatique et prédiction de ton score final.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon green">📶</div>
+        <h3>100% Offline</h3>
+        <p>Télécharge tes cours et révise partout — en zone rurale, en déplacement, sans data. School Hub WiFi local disponible en école.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon red">🏆</div>
+        <h3>EduRDC Arena</h3>
+        <p>Gagne des XP, monte en niveau, défie d'autres élèves. Classements par école, province et national. 200+ badges à débloquer.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon blue">👨‍🏫</div>
+        <h3>Portail Enseignant</h3>
+        <p>Crée ta classe virtuelle, assigne des devoirs, suis chaque élève. Génère automatiquement les bulletins PDF format EPST.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon green">👨‍👩‍👧</div>
+        <h3>Portail Parents</h3>
+        <p>Reçois des alertes SMS sur la progression de ton enfant. Contrôle parental et rapports hebdomadaires automatiques.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== ROADMAP ========== -->
+  <section class="roadmap" id="roadmap">
+    <div class="section-header">
+      <span class="section-tag green-tag">Roadmap</span>
+      <h2>On construit étape par étape</h2>
+      <p>5 phases pour aller du MVP au déploiement national.</p>
+    </div>
+    <div class="phases">
+
+      <div class="phase">
+        <div class="phase-dot active">1</div>
+        <div class="phase-content">
+          <span class="phase-tag mvp">MVP · Mois 1–4</span>
+          <h3>Fondations — Cours, Quiz & Offline</h3>
+          <p>Authentification, 500 cours EPST, moteur quiz, mode offline complet, dashboard élève.</p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-dot active">2</div>
+        <div class="phase-content">
+          <span class="phase-tag pilot">Pilote · Mois 5–7</span>
+          <h3>500 élèves à Kinshasa</h3>
+          <p>Déploiement dans 10 écoles partenaires, collecte de feedback terrain, optimisation UX.</p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-dot">3</div>
+        <div class="phase-content">
+          <span class="phase-tag ai">IA & Gamification · Mois 8–10</span>
+          <h3>KONGO AI + EduRDC Arena</h3>
+          <p>Tuteur IA intégré, système de badges et streaks, classements, analytics avancés.</p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-dot">4</div>
+        <div class="phase-content">
+          <span class="phase-tag eco">Écosystème · Mois 11–18</span>
+          <h3>Portails + School Hub + Marketplace</h3>
+          <p>Portail enseignant, portail parents, School Hub WiFi local, marketplace éducative.</p>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="phase-dot">5</div>
+        <div class="phase-content">
+          <span class="phase-tag mvp">National · Mois 19–30</span>
+          <h3>Accord Ministère EPST + Télécoms</h3>
+          <p>Partenariat zero-rating Airtel/Orange/Vodacom, 4 provinces, 50 000 élèves actifs.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ========== TÉMOIGNAGES ========== -->
+  <section class="temoignages">
+    <div class="section-header">
+      <span class="section-tag">Témoignages</span>
+      <h2>Ce qu'ils disent d'EduRDC</h2>
+      <p>Des élèves, enseignants et parents qui ont déjà testé la plateforme.</p>
+    </div>
+    <div class="temo-grid">
+
+      <div class="temo-card">
+        <div class="temo-stars">★★★★★</div>
+        <p class="temo-texte">"Grâce au simulateur Exétat, j'ai pu m'entraîner tous les soirs même sans connexion. J'ai eu 78% à mon Exétat cette année !"</p>
+        <div class="temo-auteur">
+          <div class="temo-avatar blue">JM</div>
+          <div>
+            <div class="temo-nom">Jean-Marie K.</div>
+            <div class="temo-role">Élève — Terminale Scientifique, Kinshasa</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="temo-card">
+        <div class="temo-stars">★★★★★</div>
+        <p class="temo-texte">"En tant qu'enseignante, EduRDC m'a permis de suivre chaque élève individuellement. Je vois exactement qui a des difficultés en Chimie."</p>
+        <div class="temo-auteur">
+          <div class="temo-avatar green">AM</div>
+          <div>
+            <div class="temo-nom">Amélie M.</div>
+            <div class="temo-role">Enseignante de Sciences, Lubumbashi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="temo-card">
+        <div class="temo-stars">★★★★★</div>
+        <p class="temo-texte">"Je reçois des SMS chaque semaine sur la progression de ma fille. Même sans smartphone, je suis informé. C'est vraiment pour nous."</p>
+        <div class="temo-auteur">
+          <div class="temo-avatar gold">PB</div>
+          <div>
+            <div class="temo-nom">Pierre B.</div>
+            <div class="temo-role">Parent d'élève — Goma</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== TARIFS ========== -->
+  <section class="tarifs" id="tarifs">
+    <div class="section-header">
+      <span class="section-tag">Tarifs</span>
+      <h2>Simple et accessible<br>pour tous les Congolais</h2>
+      <p>Commence gratuitement. Passe au premium quand tu veux.</p>
+    </div>
+    <div class="tarifs-grid">
+
+      <div class="tarif-card">
+        <div class="tarif-nom">Gratuit</div>
+        <div class="tarif-prix">0 <span>FC / mois</span></div>
+        <div class="tarif-desc">Pour découvrir EduRDC</div>
+        <ul class="tarif-liste">
+          <li class="ok">✓ Accès aux cours de base</li>
+          <li class="ok">✓ 10 quiz par semaine</li>
+          <li class="ok">✓ Mode offline basique</li>
+          <li class="ok">✓ Simulateur Exétat limité</li>
+          <li class="non">✗ Tuteur IA KONGO AI</li>
+          <li class="non">✗ Analytics avancés</li>
+          <li class="non">✗ Examens premium</li>
+        </ul>
+        <a href="login.html?next=examen.html" class="btn-outline tarif-btn" data-protect-exam>Commencer gratuitement</a>
+      </div>
+
+      <div class="tarif-card featured">
+        <div class="tarif-badge">Le plus populaire</div>
+        <div class="tarif-nom">Premium</div>
+        <div class="tarif-prix">4 500 <span>FC / mois</span></div>
+        <div class="tarif-desc">Pour les élèves sérieux</div>
+        <ul class="tarif-liste">
+          <li class="ok">✓ Tous les cours EPST</li>
+          <li class="ok">✓ Quiz illimités</li>
+          <li class="ok">✓ Mode offline complet</li>
+          <li class="ok">✓ Simulateur Exétat complet</li>
+          <li class="ok">✓ Tuteur IA KONGO AI</li>
+          <li class="ok">✓ Analytics personnalisés</li>
+          <li class="ok">✓ Examens premium corrigés</li>
+        </ul>
+        <a href="#" class="btn-primary tarif-btn">Commencer l'essai gratuit</a>
+      </div>
+
+      <div class="tarif-card">
+        <div class="tarif-nom">École</div>
+        <div class="tarif-prix">75 000 <span>FC / mois</span></div>
+        <div class="tarif-desc">Pour les établissements</div>
+        <ul class="tarif-liste">
+          <li class="ok">✓ Tout le plan Premium</li>
+          <li class="ok">✓ Portail enseignant complet</li>
+          <li class="ok">✓ Gestion de classes</li>
+          <li class="ok">✓ Bulletins PDF automatiques</li>
+          <li class="ok">✓ Analytics de l'école</li>
+          <li class="ok">✓ School Hub WiFi local</li>
+          <li class="ok">✓ Support prioritaire</li>
+        </ul>
+        <a href="contact.html" class="btn-outline tarif-btn">Contacter l'équipe</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-section">
+    <h2>Rejoins le mouvement<br>éducatif congolais</h2>
+    <p>Élève, enseignant, parent ou école — EduRDC est fait pour toi. Gratuit pour commencer.</p>
+    <div class="btn-group">
+      <a href="login.html" class="btn-primary">Créer mon compte gratuit →</a>
+      <a href="contact.html" class="btn-outline">Contacter l'équipe</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>© 2025 EduRDC – Développé par <strong>Mauricio MD</strong> (Étudiant en Math-Info, UNIKIN)</p>
+    <p>Construit avec ❤️ pour les 17 millions d'élèves congolais</p>
+</footer>
+<script src="../js/script.js"></script>
+<script>
+  const examLinks = document.querySelectorAll('[data-protect-exam]');
+  examLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      const storedUser = localStorage.getItem('edurdc_user');
+      let user = null;
+
+      try {
+        user = storedUser ? JSON.parse(storedUser) : null;
+      } catch (error) {
+        user = null;
+      }
+
+      if (user && user.loggedIn) {
+        window.location.href = 'examen.html';
+      } else {
+        window.location.href = 'login.html';
+      }
+    });
+  });
+</script>
+<script src="../js/js/auth.js"></script>
+</body>
+</html>

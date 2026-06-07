@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduRDC — À propos</title>
+    <link rel="stylesheet" href="../css/page-commune.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .about-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .profile {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, rgba(0,87,168,0.08), rgba(212,160,23,0.08));
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 28px;
+            padding: 1.2rem;
+        }
+        .photo-shell {
+            flex: 0 0 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.4rem;
+            border-radius: 28px;
+            background: linear-gradient(145deg, rgba(0,87,168,0.25), rgba(212,160,23,0.18));
+            box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+        }
+        .profile-img {
+            width: 240px;
+            height: 300px;
+            border-radius: 24px;
+            object-fit: cover;
+            object-position: center top;
+            border: 3px solid rgba(212,160,23,0.9);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+        }
+        .bio {
+            flex: 1;
+        }
+        .bio h1 {
+            font-family: var(--font-head);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .bio .title {
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .bio p {
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+        .section-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        .section-card h3 {
+            font-family: var(--font-head);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .section-card ul {
+            margin-left: 1.5rem;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+        }
+        .skills {
+            margin: 2rem 0;
+        }
+        .skills span {
+            display: inline-block;
+            background: var(--card);
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            margin: 0.2rem;
+            font-size: 0.8rem;
+        }
+        .cta-about {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(0,87,168,0.1), rgba(0,122,61,0.1));
+            border-radius: 24px;
+        }
+        @media (max-width: 768px) {
+            .profile {
+                padding: 1rem;
+                gap: 1rem;
+            }
+            .photo-shell {
+                flex-basis: 100%;
+            }
+            .profile-img {
+                width: 100%;
+                max-width: 260px;
+                height: 280px;
+            }
+        }
+        .btn-about {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: var(--pri);
+            border-radius: 30px;
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Edu<span>RDC</span></a>
+        <ul class="nav-links">
+            <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="enseignants.html">Enseignants</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="propos.html" class="active">À propos</a></li>
+        </ul>
+        <a href="login.html" class="btn-nav">Connexion</a>
+        <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="menu-mobile" id="menuMobile">
+        <a href="fonctionnalites.html">Fonctionnalités</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="contact.html">Contact</a>
+        <a href="propos.html">À propos</a>
+        <a href="login.html" class="btn-primary">Connexion</a>
+    </div>
+
+    <div class="about-container">
+        <!-- Photo + bio -->
+        <div class="profile">
+            <div class="photo-shell">
+                <img src="../photos/mauricio.png" alt="Mauricio MD" class="profile-img" onerror="this.src='https://via.placeholder.com/240x300?text=Photo'">
+            </div>
+            <div class="bio">
+                <h1>Mauricio <span class="gold">MD</span></h1>
+                <div class="title">📚 Étudiant en Math-Info (L2 LMD) – Université de Kinshasa</div>
+                <p>Ancien élève du Complexe Scolaire Maxel (Latin-Philologie), j’ai découvert ma passion pour le développement web pendant mes études. Durant mon parcours académique, j’ai enchaîné les petits projets jusqu’à me lancer dans <strong>EduRDC</strong>, mon premier grand projet éducatif.</p>
+                <p>Je crois fermement que la technologie peut transformer l’éducation en RDC. Ce projet est né de cette conviction et de ma volonté de mettre mes compétences au service des 17 millions d’élèves congolais.</p>
+            </div>
+        </div>
+
+        <!-- Pourquoi EduRDC ? (histoire personnelle) -->
+        <div class="section-card">
+            <h3>💡 Pourquoi EduRDC ?</h3>
+            <p>En grandissant à Kinshasa, j’ai vu mes camarades du secondaire lutter avec des manuels scolaires rares et des classes surchargées. Moi-même, en Latin-Philologie, je cherchais sans cesse des moyens plus efficaces de réviser. Quand je suis passé en Math-Info, j’ai compris que la technologie pouvait résoudre ces problèmes. <strong>EduRDC n’est pas juste un projet de codage</strong> : c’est la concrétisation d’une idée que j’ai depuis longtemps. Chaque élève congolais mérite une chance égale de réussir l’Exétat, où qu’il soit. Ce projet est ma réponse à cette injustice.</p>
+        </div>
+
+        <!-- Mes objectifs -->
+        <div class="section-card">
+            <h3>🎯 Mes objectifs</h3>
+            <ul>
+                <li><strong>À court terme :</strong> Terminer la version MVP d’EduRDC et obtenir un financement pour déployer le pilote dans 10 écoles de Kinshasa.</li>
+                <li><strong>À moyen terme :</strong> Devenir Lead Développeur (ou Tech Lead) sur un projet EdTech d’envergure nationale, et former d’autres jeunes codeurs congolais.</li>
+                <li><strong>À long terme :</strong> Lancer ma propre startup EdTech, inspirée par EduRDC, avec une équipe et des solutions pour toute l’Afrique francophone.</li>
+                <li><strong>Personnellement :</strong> Allier mes deux passions – l’enseignement (latin-philo) et la technologie – pour créer des outils réellement utiles, pas seulement « cools ».</li>
+            </ul>
+        </div>
+
+        <!-- Compétences -->
+        <div class="skills">
+            <h3>💻 Compétences</h3>
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Git & GitHub</span>
+            <span>UI/UX Design</span>
+        </div>
+
+        <!-- CTA partenaires -->
+        <div class="cta-about">
+            <h3>🤝 Vous voulez soutenir EduRDC ?</h3>
+            <p>Investisseurs, partenaires éducatifs, mentors : je suis ouvert aux collaborations pour faire décoller ce projet à l’échelle nationale.</p>
+            <a href="contact.html" class="btn-about">Discutons ensemble →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 EduRDC – Développé par <strong>Mauricio MD</strong>, étudiant passionné par l'éducation numérique en RDC.</p>
+        <p>Construit avec ❤️ pour les 17 millions d'élèves congolais</p>
+    </footer>
+
+    <script src="../js/page-commune.js"></script>
+    <!-- Suppression du double appel -->
+</body>
+</html>

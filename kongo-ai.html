@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduRDC — KONGO AI</title>
+    <link rel="stylesheet" href="../css/kongo-ai.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Edu<span>RDC</span></a>
+        <ul class="nav-links">
+            <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="enseignants.html">Enseignants</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="langue-selector">
+            <button class="langue-btn active" data-lang="fr">🇫🇷 Français</button>
+            <button class="langue-btn" data-lang="lin">🇨🇩 Lingala</button>
+            <button class="langue-btn" data-lang="sw">🇨🇩 Swahili</button>
+        </div>
+        <a href="login.html" class="btn-nav">Connexion</a>
+        <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="menu-mobile" id="menuMobile">
+        <a href="fonctionnalites.html">Fonctionnalités</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-primary">Connexion</a>
+    </div>
+
+    <section class="kongo-hero">
+        <div class="hero-content">
+            <span class="badge">🧠 Ton tuteur personnel</span>
+            <h1>KONGO <span class="gold">AI</span></h1>
+            <p>Pose-moi une question sur tes cours, je t'explique simplement.</p>
+        </div>
+    </section>
+
+    <div class="chat-container">
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="avatar">🤖</div>
+                <div class="content">
+                    <div class="name">KONGO AI</div>
+                    <div class="text">Salut ! Je suis ton tuteur intelligent. Quelle matière veux-tu réviser aujourd'hui ? 🇨🇩</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-area">
+            <div class="input-wrapper">
+                <textarea id="chatInput" placeholder="Pose ta question ici... (ex: explique-moi les équations)" rows="1"></textarea>
+                <button id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <p class="input-note">💡 KONGO AI connaît tout le programme EPST. Pose ta question en français, lingala ou swahili !</p>
+        </div>
+    </div>
+
+   <footer>
+    <p>© 2025 EduRDC – Développé par <strong>Mauricio MD</strong> (Étudiant en Math-Info, UNIKIN)</p>
+    <p>Construit avec ❤️ pour les 17 millions d'élèves congolais</p>
+</footer>
+
+    <script src="../js/kongo-ai.js"></script>
+    <script src="../js/js/auth.js"></script>
+</body>
+</html>

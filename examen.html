@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduRDC — Simulateur Exétat</title>
+    <link rel="stylesheet" href="../css/examen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Edu<span>RDC</span></a>
+        <div class="nav-infos">
+            <span class="timer" id="timer">⏱️ 00:00</span>
+            <span class="score" id="scoreHeader">🎯 0/10</span>
+        </div>
+    </nav>
+
+    <div class="exam-container">
+        <div class="exam-header">
+            <h1>📝 Simulateur Exétat</h1>
+            <p>Mathématiques — Option Scientifique | 10 questions chronométrées</p>
+        </div>
+
+        <div class="questions-container" id="questionsContainer">
+            <!-- Les questions seront injectées ici -->
+        </div>
+
+        <div class="exam-footer">
+            <button class="btn-submit" id="submitBtn">✅ Valider et voir mon score</button>
+            <button class="btn-reset hidden" id="resetBtn">🔄 Recommencer l'examen</button>
+        </div>
+    </div>
+
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <h2>📊 Ton résultat</h2>
+            <div class="modal-score" id="modalScore">0/10</div>
+            <div class="modal-percent" id="modalPercent">0%</div>
+            <div class="modal-message" id="modalMessage"></div>
+            <div class="modal-details" id="modalDetails"></div>
+            <div class="modal-buttons">
+                <button class="btn-primary" id="closeModalBtn">Continuer mes révisions</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 EduRDC Platform · Simulateur Exétat</p>
+    </footer>
+
+    <script src="../js/examen.js"></script>
+</body>
+</html>

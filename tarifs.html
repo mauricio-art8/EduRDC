@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduRDC — Tarifs</title>
+    <link rel="stylesheet" href="../css/page-commune.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Edu<span>RDC</span></a>
+        <ul class="nav-links">
+            <li><a href="fonctionnalites.html">Fonctionnalités</a></li>
+            <li><a href="enseignants.html">Enseignants</a></li>
+            <li><a href="tarifs.html" class="active">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login.html" class="btn-nav">Connexion</a>
+        <button class="burger" id="burger"><span></span><span></span><span></span></button>
+    </nav>
+
+    <div class="menu-mobile" id="menuMobile">
+        <a href="fonctionnalites.html">Fonctionnalités</a>
+        <a href="enseignants.html">Enseignants</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn-primary">Connexion</a>
+    </div>
+
+    <section class="page-hero">
+        <div class="hero-content">
+            <span class="badge">💰 Tarifs accessibles</span>
+            <h1>Simple, clair, <span class="gold">pas cher</span></h1>
+            <p>Commencez gratuitement. Passez au premium quand vous êtes prêt.</p>
+        </div>
+    </section>
+
+    <section class="pricing-grid container">
+        <div class="pricing-card">
+            <div class="pricing-header">
+                <h3>Gratuit</h3>
+                <div class="price">0 <span>FC / mois</span></div>
+                <p>Pour découvrir EduRDC</p>
+            </div>
+            <ul>
+                <li><i class="fas fa-check"></i> Cours de base</li>
+                <li><i class="fas fa-check"></i> 10 quiz/semaine</li>
+                <li><i class="fas fa-check"></i> Mode offline basique</li>
+                <li><i class="fas fa-check"></i> Simulateur Exétat limité</li>
+                <li class="disabled"><i class="fas fa-times"></i> Tuteur IA KONGO AI</li>
+                <li class="disabled"><i class="fas fa-times"></i> Analytics avancés</li>
+            </ul>
+            <a href="login.html" class="btn-outline">Commencer</a>
+        </div>
+
+        <div class="pricing-card featured">
+            <div class="popular-badge">🔥 Le plus populaire</div>
+            <div class="pricing-header">
+                <h3>Premium</h3>
+                <div class="price">4 500 <span>FC / mois</span></div>
+                <p>Pour les élèves sérieux</p>
+            </div>
+            <ul>
+                <li><i class="fas fa-check"></i> Tous les cours EPST</li>
+                <li><i class="fas fa-check"></i> Quiz illimités</li>
+                <li><i class="fas fa-check"></i> Mode offline complet</li>
+                <li><i class="fas fa-check"></i> Simulateur Exétat complet</li>
+                <li><i class="fas fa-check"></i> Tuteur IA KONGO AI</li>
+                <li><i class="fas fa-check"></i> Analytics personnalisés</li>
+            </ul>
+            <a href="login.html" class="btn-primary">Essai gratuit 7 jours</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="pricing-header">
+                <h3>École</h3>
+                <div class="price">75 000 <span>FC / mois</span></div>
+                <p>Pour les établissements</p>
+            </div>
+            <ul>
+                <li><i class="fas fa-check"></i> Tout Premium</li>
+                <li><i class="fas fa-check"></i> Portail enseignant complet</li>
+                <li><i class="fas fa-check"></i> Bulletins PDF automatiques</li>
+                <li><i class="fas fa-check"></i> Analytics de l'école</li>
+                <li><i class="fas fa-check"></i> School Hub WiFi local</li>
+                <li><i class="fas fa-check"></i> Support prioritaire</li>
+            </ul>
+            <a href="contact.html" class="btn-outline">Contacter l'équipe</a>
+        </div>
+    </section>
+
+    <section class="faq-section container">
+        <h2>Questions fréquentes</h2>
+        <div class="faq-grid">
+            <div class="faq-item"><h4>Le paiement est-il sécurisé ?</h4><p>Oui, via Mobile Money (M-Pesa, Airtel Money, Orange Money).</p></div>
+            <div class="faq-item"><h4>Peut-on payer à l'année ?</h4><p>Oui, avec 2 mois offerts (19 900 FC/an au lieu de 54 000 FC).</p></div>
+            <div class="faq-item"><h4>Que devient mon compte si je passe au premium ?</h4><p>Toutes vos données sont conservées et vos progrès aussi.</p></div>
+            <div class="faq-item"><h4>Y a-t-il un engagement ?</h4><p>Non, vous résiliez quand vous voulez depuis votre espace.</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 EduRDC Platform · Kinshasa, RDC</p>
+    </footer>
+
+    <script src="../js/page-commune.js"></script>
+    <script src="../js/js/auth.js"></script>
+</body>
+</html>
